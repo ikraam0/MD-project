@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">job-portal</string>
+
+    <string-array name="tabVille">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Fes</item>
+    </string-array>
+
+    <string-array name="tabcat">
+        <item>...</item>
+    </string-array>
+
+    <string-array name="tabsecteur">
+        <item>Choisir une categorie</item>
+    </string-array>
+</resources>
+

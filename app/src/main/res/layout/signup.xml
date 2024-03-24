@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp">
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FF00BCD4"
+                android:layoutDirection="locale"
+                android:text="VOUS Serez le plus proche au marché de travail c'est gratuit!"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vous êtes :"
+                android:textColor="#0E0D0D"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/candidateRadioButton"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:text="Candidat"
+                    android:textColor="#0E0D0D"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/recruiterRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recruteur"
+                    android:textSize="10sp"
+                    android:textColor="#0E0D0D" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="13dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email:"
+                    android:textColor="#0E0D0D" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Votre adresse email..." />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ville:"
+                    android:textColor="#0E0D0D" />
+
+                <Spinner
+                    android:id="@+id/imagesTypeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/tabVille"
+                    ></Spinner>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="mot de passe:"
+                    android:textColor="#0E0D0D" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="textPassword"
+                    android:hint="Choisissez un mot de passe..." />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/mdpO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="122dp"
+                android:text="(au moins 5 caracteres)Choisissez un mot de passe qui n'est pas facile a deviner."
+                android:paddingBottom="0dp"
+                android:textFontWeight="1"
+                android:textColor="#FF676C6E"
+                android:textSize="8dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="confirmer mot de passe:"
+                    android:textColor="#0E0D0D" />
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="text"
+                    android:hint="Choisissez un mot de passe..." />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/agreeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="En validant mon inscription, j'accepte les conditions générales d'utilisation du site alkhad.ma."
+        android:textColor="#0E0D0D" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRÉER UN COMPTE"
+        android:textColor="#0E0D0D"
+        android:background="@color/bgboutton"
+        android:onClick="CreationOfAcc"
+
+     />
+
+</LinearLayout>
